@@ -13,9 +13,13 @@ public class MainApp {
 	public void mainCycle() {
 
 		PathCounterFacadeBean pcFacade = new PathCounterFacadeBean();
-		pcFacade.getMaxPathAmount();
+		int maxNumber = pcFacade.getMaxPathAmount();
 
-		System.out.println("Path found.");
+		if (maxNumber > 0) {
+			System.out.println("Path found.");
+		} else {
+			System.out.println("No appropirate path with described conditions was found.");
+		}
 
 	}
 }
