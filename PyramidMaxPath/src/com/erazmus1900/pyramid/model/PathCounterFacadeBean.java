@@ -195,16 +195,21 @@ public class PathCounterFacadeBean implements PathCounterFacade {
 
 		int maxNumber = 0;
 
-		for (List<Integer> intList : positionLineValues.values()) {
-			for (int iVal : intList) {
-				if (iVal > maxNumber) {
-					maxNumber = iVal;
+		if (positionLineValues != null) {
+			for (List<Integer> intList : positionLineValues.values()) {
+				for (int iVal : intList) {
+					if (iVal > maxNumber) {
+						maxNumber = iVal;
+					}
 				}
 			}
-		}
 
-		System.out.println("maxNumber: " + maxNumber);
-		return maxNumber;
+			System.out.println("maxNumber: " + maxNumber);
+			return maxNumber;
+
+		} else {
+			return 0;
+		}
 
 	}
 
