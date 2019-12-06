@@ -1,0 +1,22 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.erazmus1900.property.FileStorageProperties",
+      "name": "file",
+      "type": "com.erazmus1900.property.FileStorageProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.erazmus1900.property.FileStorageProperties",
+      "name": "file.download-dir",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.erazmus1900.property.FileStorageProperties",
+      "name": "file.upload-dir",
+      "type": "java.lang.String"
+    }
+  ]
+}
